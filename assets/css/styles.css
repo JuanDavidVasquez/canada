@@ -28,7 +28,7 @@ html{
     --special-color: #990539;
     --background-color: #414141;
     --gray-text: #525252;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 body{
     font-family: "Ruhl", sans-serif;
@@ -272,6 +272,11 @@ section .container .container-text{
 }
 
 
+
+/*----------------------------
+        Leaf Animation
+-----------------------------*/
+
 #leaf-container {
     position: fixed;
     top: 0;
@@ -291,3 +296,99 @@ section .container .container-text{
     opacity: .5;
   }
   
+/*----------------------------
+Scroll Horizontal 1
+-----------------------------*/
+.container-wrap-first {
+    display: flex;
+    flex-direction: row; 
+    height: 100vh; 
+    width: 100vw; 
+}
+
+.wrap {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-wrap .container {
+    display: flex;
+    width: 100%; 
+    height: 100%; 
+}
+
+/*----------------------------
+Scroll Horizontal 2
+-----------------------------*/
+.container-wrap {
+    display: flex;
+    flex-direction: row; 
+    height: 100vh; 
+    width: 100vw; 
+}
+
+.wrap {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-wrap .container {
+    display: flex;
+    width: 100%; 
+    height: 100%; 
+}
+
+/*----------------------------
+            Footer
+-----------------------------*/
+
+
+footer {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-link {
+    color: #61dafb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
