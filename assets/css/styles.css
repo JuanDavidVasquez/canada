@@ -66,20 +66,6 @@ a{
 ul{
     list-style: none;
 }
-button{
-    padding: 2rem 6rem;
-    background-color: #4c6e97;
-    border: none;
-    color: #fff;
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: background 0.5s ease-in-out 1s;
-    transition: all 1s ease;
-}
-button:hover{
-    background: #27394e;
-    font-size: 2.6rem;
-}
 .flex{
     display: flex;
     flex-direction: column;
@@ -268,6 +254,12 @@ section .container .container-text{
     .carrouselImges img {
         width: 100%;
     }
+
+    .map{
+        width: 120%;
+        height: 300px;
+        transform: translateX(-10%);
+    }
     
 }
 
@@ -320,6 +312,107 @@ Scroll Horizontal
     height: 100%; 
 }
 
+/*----------------------------
+            Quiz
+-----------------------------*/
+
+.quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.quiz-container {
+    margin-top: 20px;
+}
+.tittleQuiz{
+    width: 100%;
+    padding: 1rem;
+}
+.question {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.option-btn {
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.option-btn:hover {
+    background-color: #357ab8;
+    transform: translateY(-2px);
+}
+
+.option-btn:active {
+    transform: translateY(0);
+}
+
+.next-btn, .restart-btn {
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.next-btn:hover, .restart-btn:hover {
+    background-color: #4cae4c;
+    transform: translateY(-2px);
+}
+
+.next-btn:active, .restart-btn:active {
+    transform: translateY(0);
+}
+
+.score-container {
+    margin-top: 20px;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #5cb85c;
+}
+
+.correct {
+    background-color: #4caf50; /* Verde */
+    color: white;
+}
+
+.incorrect {
+    background-color: #f44336; /* Rojo */
+    color: white;
+}
+
+.selected {
+    background-color: #2196F3; /* Azul */
+    color: white;
+}
+
 
 
 /*----------------------------
@@ -328,10 +421,12 @@ Scroll Horizontal
 
 
 footer {
+    position: relative;
     background-color: #282c34;
     color: #ffffff;
     padding: 20px 0;
     font-family: 'Arial', sans-serif;
+    z-index: 2;
 }
 
 footer .container {
