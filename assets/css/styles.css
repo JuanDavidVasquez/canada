@@ -193,7 +193,7 @@ section .container .container-text{
     background-attachment: fixed;
     background-position: center;
     width: 100%;
-    min-height: 700px;
+    min-height: 450px;
 }
 
 .culture .container .container-image{
@@ -202,7 +202,7 @@ section .container .container-text{
     background-attachment: fixed;
     background-position: center;
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
 }
 
 .tourism .container .container-image{
@@ -212,7 +212,7 @@ section .container .container-text{
     background-attachment: fixed;
     background-position: center;
     width: 100%;
-    min-height: 700px;
+    min-height: 600px;
 }
 
 .games .container .container-image{
@@ -297,31 +297,7 @@ section .container .container-text{
   }
   
 /*----------------------------
-Scroll Horizontal 1
------------------------------*/
-.container-wrap-first {
-    display: flex;
-    flex-direction: row; 
-    height: 100vh; 
-    width: 100vw; 
-}
-
-.wrap {
-    flex: 0 0 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-wrap .container {
-    display: flex;
-    width: 100%; 
-    height: 100%; 
-}
-
-/*----------------------------
-Scroll Horizontal 2
+Scroll Horizontal
 -----------------------------*/
 .container-wrap {
     display: flex;
@@ -343,6 +319,8 @@ Scroll Horizontal 2
     width: 100%; 
     height: 100%; 
 }
+
+
 
 /*----------------------------
             Footer
