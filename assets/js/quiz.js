@@ -113,7 +113,7 @@ function showScore() {
     questionElement.style.display = 'none';
     optionsElement.style.display = 'none';
     scoreContainer.style.display = 'block';
-    scoreDisplay.textContent = `Your score: ${score} out of ${questions.length}`;
+    scoreDisplay.textContent = ` ${score} out of ${questions.length}`;
     nextButton.style.display = 'none'; // Hide the Next button
 }
 

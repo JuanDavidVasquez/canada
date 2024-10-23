@@ -323,9 +323,19 @@ Scroll Horizontal
     justify-content: center;
     width: 100%;
     position: relative;
+    padding: 1rem;
     z-index: 2;
 }
-
+.quiz .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    z-index: 2;
+}
 .quiz-container {
     margin-top: 20px;
 }
@@ -334,7 +344,7 @@ Scroll Horizontal
     padding: 1rem;
 }
 .question {
-    font-size: 1.4rem;
+    font-size: var(--header1);
     margin-bottom: 15px;
     line-height: 1.5;
 }
@@ -352,7 +362,7 @@ Scroll Horizontal
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: var(--header1);
     margin: 10px 0;
     padding: 10px;
     transition: background-color 0.3s, transform 0.2s;
@@ -373,7 +383,7 @@ Scroll Horizontal
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: var(--header1);
     margin-top: 20px;
     padding: 10px;
     transition: background-color 0.3s, transform 0.2s;
@@ -394,7 +404,7 @@ Scroll Horizontal
 
 .score {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: var(--header1);
     color: #5cb85c;
 }
 
