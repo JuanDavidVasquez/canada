@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Ruhl';
+    src: url(../fonts/FrankRuhlLibre-Regular.ttf);
+}
+@font-face {
+    font-family: 'Ruhl Medium';
+    src: url(../fonts/FrankRuhlLibre-Medium.ttf);
+}
+@font-face {
+    font-family: 'Vibes';
+    src: url(../fonts/GreatVibes-Regular.ttf);
+}
+html{
+    font-size: 62.5%;
+    --main-color: #000; 
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --big: calc(6rem + 1vw);
+    --ultra: calc(20rem + 1vw);
+    --special-color: #990539;
+    --background-color: #414141;
+    --gray-text: #525252;
+    scroll-behavior:smooth;
+}
+body{
+    font-family: "Ruhl", sans-serif;
+    animation: opening 1s ease-in-out;
+    overflow-x: hidden;
+}
+.bebas-neue-regular{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+h1{
+    font-size: var(--header1);
+    font-family: "Vibes", sans-serif;
+}
+li,button,label,input,p{
+    font-size: var(--text);
+}
+h2{
+    font-size: var(--header2);
+    color: var(--special-color);
+}
+h3{
+    font-size: var(--header3);
+    font-weight: normal;
+}
+h4,h5{
+    font-size: var(--header4);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button{
+    padding: 2rem 6rem;
+    background-color: #4c6e97;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out 1s;
+    transition: all 1s ease;
+}
+button:hover{
+    background: #27394e;
+    font-size: 2.6rem;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------------------
+            Header
+-----------------------------*/
+
+.container-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/header.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.tittleCanada{
+    font-size: var(--ultra);
+    color: var(--special-color);
+}
+
+/*----------------------------
+        Sections
+-----------------------------*/
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+section .container .container-text{
+    width: 50%;
+    padding: 0 2rem;
+}
+
+/*----------------------------
+        Description
+-----------------------------*/
+
+.description .container .container-image{
+    width: 50%;
+    height: 400px;
+    background: url("../img/header2.webp");
+    background-size: cover;
+    background-position: 250px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+/*----------------------------
+            Location
+-----------------------------*/
+.location .container .container-image{
+    width: 50%;
+    height: 400px;
+}
+.map{
+    width: 100%;
+    min-width: 350px;
+}
+
+/*----------------------------
+            Foods
+-----------------------------*/
+
+.carrouselImges {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrouselImges img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s, filter 0.5s ease;
+     flex-shrink: 0;
+}
+
+.carrouselImges:hover img {
+    transform: scale(0.9);
+    filter: brightness(50%);
+}
+
+.carrouselImges img:hover {
+    transform: scale(1.1);
+    filter: brightness(100%); 
+}
+
+.customs .container .container-image{
+    background: url(../img/traditions.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    min-height: 700px;
+}
+
+.culture .container .container-image{
+    background: url(../img/fiestasIndigenas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    min-height: 700px;
+}
+
+@media screen and (max-width: 768px){
+
+    .tittleCanada{
+        font-size: var(--big);
+    }
+
+    .container-header{
+        height: 100vh;
+    }
+    .description .container .container-image{
+        width: 100%;
+        background-position: center;
+    }
+    .location .container .container-image{
+        width: 100%;
+        height: 300px;
+    }
+    section{
+        height: auto;
+    }
+    section .container .container-text{
+        padding: 15px;
+    }
+    .container-image, section .container .container-text{
+        width: 100%;
+    }
+    .carrouselImges{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .carrouselImges img {
+        width: 100%;
+    }
+    
+}
