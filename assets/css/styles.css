@@ -214,7 +214,7 @@ section .container .container-text{
     min-height: 700px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
 
     .tittleCanada{
         font-size: var(--big);
