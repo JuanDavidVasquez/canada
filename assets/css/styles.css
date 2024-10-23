@@ -204,6 +204,16 @@ section .container .container-text{
     min-height: 700px;
 }
 
+.tourism .container .container-image{
+    background: url(../img/turismo.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    min-height: 700px;
+}
+
 @media screen and (max-width: 768px){
 
     .tittleCanada{
