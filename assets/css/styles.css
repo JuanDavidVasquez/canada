@@ -166,6 +166,7 @@ section .container .container-text{
     align-items: center;
     overflow: hidden;
     position: relative;
+    z-index: 2;
 }
 
 .carrouselImges img {
@@ -214,6 +215,25 @@ section .container .container-text{
     min-height: 700px;
 }
 
+.games .container .container-image{
+    background: url(../img/deportes.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    min-height: 400px;
+}
+@media screen and (min-width: 900px){
+    .games .container .container-image{
+        width: 50%;
+    }
+    section .container .container-image{
+        width: 50% !important;
+    }
+    
+}
+
 @media screen and (max-width: 900px){
 
     .tittleCanada{
@@ -250,3 +270,24 @@ section .container .container-text{
     }
     
 }
+
+
+#leaf-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .leaf {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    transform-origin: center;
+    transition: transform 0.3s linear, left 0.3s linear, top 0.3s linear;
+    opacity: .5;
+  }
+  
